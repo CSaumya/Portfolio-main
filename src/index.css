@@ -11,8 +11,9 @@
 body{
    font-family: "Montserrat", sans-serif;
    min-height: 100vh;
-background: #3f3c80;
-background: linear-gradient(0deg, rgba(63, 60, 128, 1) 0%, rgba(56, 56, 156, 1) 35%, rgba(134, 175, 181, 1) 100%);  overflow-x: hidden;
+background: rgb(59, 72, 95) ;
+
+overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -32,15 +33,3 @@ background: linear-gradient(0deg, rgba(63, 60, 128, 1) 0%, rgba(56, 56, 156, 1) 
 }
 
 
-@keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.animate-spin-slow {
-  animation: spin-slow 15s linear infinite;
-}
-
-.glow-photo {
-  box-shadow: 0 0 15px #38bdf8, 0 0 30px #1631c7, 0 0 45px #0b19b3;
-}

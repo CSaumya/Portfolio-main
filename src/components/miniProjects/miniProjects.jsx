@@ -15,7 +15,7 @@ const projects = [
     desc: "A modern ToDo app with dark/light mode.",
     img: todo,
     github: "https://github.com/CSaumya/SmartToDo",
-    live: "https://smarttodo-seven.vercel.app/",
+    live: "https://csaumya.github.io/SmartToDo/",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const projects = [
     desc: "Fetches live weather data using OpenWeather API.",
     img: weather,
     github: "https://github.com/CSaumya/WeatherApp",
-    live: "https://weatherapp-opal-kappa.vercel.app/",
+    live: "https://csaumya.github.io/SkyCast/",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const projects = [
     desc: "A Ui clone of Razorpay with TailwindCSS.",
     img: razorpay,
     github: "https://github.com/CSaumya/Razorpay-Clone",
-    live: "https://razorpay-clone-wine.vercel.app/",
+    live: "https://csaumya.github.io/RazorPay-UI-Clone/",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const projects = [
     desc: "Email validator website with great Ui.",
     img: mail,
     github: "https://github.com/CSaumya/Mailify",
-    live: "https://mailify-wheat.vercel.app/",
+    live: "https://csaumya.github.io/Mailify/",
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const projects = [
     desc: "Classic 2-player Tic-Tac-Toe game built.",
     img: ticTac,
     github: "https://github.com/CSaumya/Tic-Tac-Toe",
-    live: "https://tic-tac-toe-csaumya.vercel.app/",
+    live: "https://csaumya.github.io/Tic-Tac-Toe/",
   },
 ];
 
@@ -95,7 +95,7 @@ const Project = () => {
         <p className="text-[18px] sm:text-[20px] md:text-[25px] text-[#9cabce]">
           My Learnings So Far
         </p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#21295C]">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#021a37]">
           Projects
         </h1>
       </div>

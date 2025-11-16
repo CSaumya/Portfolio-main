@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <nav
       className={`w-full text-white mb-[30px] py-4 fixed top-0 left-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-[#2D2D5C] shadow-md" : "bg-transparent"
+        isScrolled ? "bg-[#3C4863] shadow-md" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -58,27 +58,43 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div
-        className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${
-          isOpen ? "max-h-60 opacity-100 mt-4" : "max-h-0 opacity-0"
-        }`}
-      >
-        <ul className="flex flex-col items-center gap-6 pb-4 bg-[#001233] text-white rounded-lg shadow-lg">
-          {navItems.map((item) => (
-            <li key={item.to} className="hover:underline underline-offset-4">
-              <Link
-                to={item.to}
-                smooth={true}
-                duration={500}
-                offset={-80}
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      {/* Full Screen Slide Menu */}
+<div
+  className={`
+    fixed top-0 right-0 h-screen w-full 
+    bg-[#001233]/90 backdrop-blur-md text-white 
+    flex flex-col items-center justify-center
+    transition-transform duration-500 ease-in-out
+    ${isOpen ? "translate-x-0" : "translate-x-full"}
+    md:hidden z-40
+  `}
+>
+  {/* Close Button */}
+  <button
+    className="absolute top-6 right-6 text-3xl"
+    onClick={() => setIsOpen(false)}
+  >
+    <FaTimes />
+  </button>
+
+  {/* Slide Menu Items */}
+  <ul className="flex flex-col gap-10 text-2xl font-semibold">
+    {navItems.map((item) => (
+      <li key={item.to} className="hover:text-cyan-300 transition">
+        <Link
+          to={item.to}
+          smooth={true}
+          duration={500}
+          offset={-80}
+          onClick={() => setIsOpen(false)}
+        >
+          {item.name}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
+
     </nav>
   );
 };

@@ -15,10 +15,12 @@ const Skills = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center px-6 py-12">
+      
       {/* Heading */}
       <div className="text-center mb-12">
         <p className="text-[#9EB3C2] text-lg md:text-2xl">Tools & Technologies</p>
-        <h1 className="text-[#21295C] text-4xl md:text-6xl font-bold">
+        <h1 className="text-4xl md:text-6xl font-bold text-[#021a37]
+                      ">
           Skills
         </h1>
       </div>
@@ -28,13 +30,22 @@ const Skills = () => {
         {skills.map((s, i) => (
           <div
             key={i}
-            className="flex flex-col items-center justify-center p-6 rounded-2xl 
-                       bg-blue-900/30 backdrop-blur-md shadow-md 
-                       hover:shadow-[0_0_20px_rgba(59,130,246,0.8)] 
-                       transform hover:scale-110 transition duration-500"
+            className="group flex flex-col items-center justify-center p-6 
+                       rounded-2xl bg-blue-600/30 backdrop-blur-md 
+                       border border-white/20 shadow-md 
+                       hover:shadow-[0_0_25px_rgba(59,130,246,0.8)]
+                       transform hover:scale-105 hover:-translate-y-2 
+                       transition duration-500"
           >
-            <div className={`text-6xl ${s.color} mb-3`}>{s.icon}</div>
-            <p className="text-white font-semibold">{s.name}</p>
+            <div
+              className={`text-6xl ${s.color} mb-3 
+                          drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]`}
+            >
+              {s.icon}
+            </div>
+            <p className="text-white font-semibold group-hover:text-white">
+              {s.name}
+            </p>
           </div>
         ))}
       </div>

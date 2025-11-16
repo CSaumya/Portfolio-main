@@ -36,7 +36,7 @@ const ReachMe = () => {
         <p className="text-[#9EB3C2] text-lg md:text-2xl">
           Get in touch and let’s turn ideas into reality
         </p>
-        <h1 className="text-[#21295C] text-4xl md:text-6xl font-bold">
+        <h1 className="text-[#021a37] text-4xl md:text-6xl font-bold">
           Reach Me
         </h1>
       </div>
@@ -46,7 +46,7 @@ const ReachMe = () => {
         ref={form}
         onSubmit={sendEmail}
         className="max-w-xl mx-auto flex flex-col gap-4 p-6 rounded-2xl
-                   bg-white/20 backdrop-blur-md shadow-lg"
+                   bg-white/20 backdrop-blur-md shadow-lg hover:shadow-[0_0_25px_rgba(56,189,248,0.5)]"
       >
         <label className="font-semibold text-teal-50">Name</label>
         <input

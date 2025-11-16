@@ -9,7 +9,7 @@ const FindMe = () => {
         <p className="text-[#9EB3C2] text-lg md:text-2xl">
           Wanna connect
         </p>
-        <h1 className="text-[#21295C] text-4xl md:text-6xl font-bold">
+        <h1 className="text-[#021a37] text-4xl md:text-6xl font-bold">
           Find Me On
         </h1>
       </div>
@@ -21,7 +21,7 @@ const FindMe = () => {
           href="https://github.com/CSaumya"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#9EB3C2] text-4xl hover:text-[#065A82] transition transform hover:scale-110"
+          className="text-[#9EB3C2] text-4xl hover:text-[#0a0646] transition transform hover:scale-110"
         >
           <FaGithub />
         </a>
@@ -31,7 +31,7 @@ const FindMe = () => {
           href="https://www.linkedin.com/in/saumya--chaudhary/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#9EB3C2] text-4xl hover:text-[#065A82] transition transform hover:scale-110"
+          className="text-[#9EB3C2] text-4xl hover:text-[#0a0646] transition transform hover:scale-110"
         >
           <FaLinkedin />
         </a>
@@ -41,7 +41,7 @@ const FindMe = () => {
           href="https://x.com/SaneSaumya"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#9EB3C2] text-4xl hover:text-[#065A82] transition transform hover:scale-110"
+          className="text-[#9EB3C2] text-4xl hover:text-[#0a0646] transition transform hover:scale-110"
         >
           <FaTwitter />
         </a>
