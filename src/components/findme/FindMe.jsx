@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { SiLeetcode } from "react-icons/si";
 
 const FindMe = () => {
   return (
@@ -44,6 +45,15 @@ const FindMe = () => {
           className="text-[#9EB3C2] text-4xl hover:text-[#0a0646] transition transform hover:scale-110"
         >
           <FaTwitter />
+        </a>
+        {/* Leetcode */}
+        <a
+          href="https://leetcode.com/u/Saumya_Chaudhary01/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#9EB3C2] text-4xl hover:text-[#0a0646] transition transform hover:scale-110"
+        >
+          <SiLeetcode />
         </a>
       </div>
     </div>
